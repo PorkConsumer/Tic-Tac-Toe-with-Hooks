@@ -11,6 +11,9 @@ const Game = () => {
 
     const handleClick = (i) => {
         const timeInHistory = history.slice(0, stepNumber + 1); 
+        console.log("history: ");
+        console.log(history);
+        console.log(timeInHistory);
         const current = timeInHistory[stepNumber];  
         const squares = [...current]; 
         // If user click an occupied square or if game is won, return
@@ -52,7 +55,7 @@ const Game = () => {
             squares={
                 history[stepNumber]   //an array of 9 squares
             }
-            onClick={
+            handleClick={
                 handleClick //passing in a function
             }
           /> 

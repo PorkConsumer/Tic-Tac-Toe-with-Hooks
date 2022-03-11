@@ -1,8 +1,8 @@
 import React from 'react';
 import '../index.css';
 
-const Square = ({value, onClick}) => (
-    <button className="square" onClick={onClick}>
+const Square = ({value, handleClick}) => (
+    <button className="square" onClick={handleClick}>
         {value}
     </button>
 );
