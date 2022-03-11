@@ -9,6 +9,7 @@ const Board = ({squares, handleClick}) => {
             handleClick={() => handleClick(i)}
         />
     )
+    console.log("Helen says hi")
     return (
         <div>
             {
